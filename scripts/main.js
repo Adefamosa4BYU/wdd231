@@ -6,52 +6,11 @@ const hamburger = document.getElementById('hamburger');
       hamburger.setAttribute('aria-expanded', isOpen);
     });
 
-
     document.getElementById("copyright").textContent =
   `©${new Date().getFullYear()} Rubia M. Francesco @ Madagascar`;
 
 document.getElementById("last-modified").textContent =
   `Last Updated: ${document.lastModified}`;
-
-
-
-//   const courseListDiv = document.getElementById('course-list');
-// const creditDisplay = document.getElementById('total-credits');
-
-// function renderCourses(filterType = 'all') {
-//   let filtered = courses;
-//   if (filterType !== 'all') {
-//     filtered = courses.filter(course => course.type === filterType);
-//   }
-
-//   courseListDiv.innerHTML = '';
-//   let totalCredits = 0;
-
-//   filtered.forEach(course => {
-//     const card = document.createElement('div');
-//     card.className = `course-card ${course.completed ? 'completed' : 'incomplete'}`;
-//     card.innerHTML = `
-//     <p>${course.subject}</p>
-//       <h4>${course.number}</h4>
-//       `;
-//       courseListDiv.appendChild(card);
-//       totalCredits += course.credits;
-//     });
-    
-//     creditDisplay.textContent = `Total Credits: ${totalCredits}`;
-// }
-
-// // Filter Button Event
-// document.querySelectorAll('.filters button').forEach(button => {
-//   button.addEventListener('click', () => {
-//     renderCourses(button.dataset.filter);
-//   });
-// });
-
-// renderCourses(); // Initial load
-
-//<p>Credits: ${course.credits}</p>
-
 
 
 // Main DOM manipulation
