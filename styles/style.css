@@ -37,7 +37,7 @@ body {
     overflow: hidden;
   }
 
-  .header-title h1 {
+  .header-title h2 {
     font-size: clamp(1rem, 5vw, 1.8rem);
     white-space: nowrap;         /* prevent wrap */
     overflow: hidden;
