@@ -16,6 +16,7 @@ document.getElementById("last-modified").textContent =
 // Main DOM manipulation
 const container = document.getElementById('courseButtonsContainer');
 const filterButtons = document.querySelectorAll('.filters button');
+const totalCreditsEl = document.getElementById('total-credits');
 
 // Render function
 function renderCourses(filter) {
@@ -29,6 +30,11 @@ function renderCourses(filter) {
         btn.classList.add(course.completed ? 'completed' : 'incomplete');
         container.appendChild(btn);
     });
+
+     // Calculate and show total credits using reduce()
+    const totalCredits = filtered.reduce((sum, course) => sum + course.credits, 0);
+    totalCreditsEl.textContent = `Total Credits: ${totalCredits}`;
+
 }
 
 // Filter button event listeners
