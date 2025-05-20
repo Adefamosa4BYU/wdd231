@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home Page: WDD 231 Project by Adegbite Famosa</title>
   <meta name="author" content="Adegbite Famosa">
-        <meta name="description" content="Week 1 project for WDD 231: Responsive Web Design. Created by Adegbite Famosa to demonstrate responsive layout, JavaScript functionality, and dynamic content rendering.">
-        <link href="styles/rafting.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css" />
-    <script src="scripts/main.js" defer></script>
-     <script src="scripts/courses.js" ></script>
-    
+  <meta name="description"
+    content="Week 1 project for WDD 231: Responsive Web Design. Created by Adegbite Famosa to demonstrate responsive layout, JavaScript functionality, and dynamic content rendering.">
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/courses.js"></script>
+
 </head>
+
 <body>
-<header>
+  <header>
     <div class="header-container">
-        <div class="header-title">
-            <img src="images/logo2.png" alt="Profile Photo" class="profile-pic">
-            <h1>Rubia M. Francesco</h1>
-        </div>
+      <div class="header-title">
+        <img src="images/logo2.png" alt="Profile Photo" class="profile-pic">
+        <h1>Rubia M. Francesco</h1>
+      </div>
       <button class="hamburger" id="hamburger" aria-label="Toggle Menu" aria-expanded="false">
         <span class="line"></span>
         <span class="line"></span>
@@ -35,13 +42,16 @@
   </header>
 
   <main>
-    <h2>Home</h2>
+    <section>
+
+      <h1>Home</h1>
+    </section>
 
     <section class="content-grid">
 
       <div class="course-work card">
         <div class="content-header">
-            <p>Course Work</p>
+          <p>Course Work</p>
         </div>
         <ul>
           <li></li>
@@ -52,7 +62,7 @@
 
       <div class="location card">
         <div class="content-header">
-            <h3>Toliara, Madagascar</h3>
+          <h3>Toliara, Madagascar</h3>
         </div>
         <img src="images/tree.jpg" alt="Baobab Tree">
         <p>Baobab Trees</p>
@@ -61,9 +71,9 @@
     </section>
 
     <section class="cert-section card">
-        <div class="content-header">
-            <h3>Web and Computer Programming Certificate</h3>
-        </div>
+      <div class="content-header">
+        <h3>Web and Computer Programming Certificate</h3>
+      </div>
 
       <div class="filters">
         <button data-filter="ALL">All</button>
@@ -74,7 +84,7 @@
       <div class="course-buttons" id="courseButtonsContainer"></div>
 
 
-<!-- 
+      <!-- 
     <div class="course-buttons">
         <button class="row1">CSE 110</button>
         <button class="row1">WDD 130</button>
@@ -90,7 +100,8 @@
 
   <footer>
     <p id="copyright"></p>
-  <p id="last-modified"></p>
+    <p id="last-modified"></p>
   </footer>
 </body>
+
 </html>
