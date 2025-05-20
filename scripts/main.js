@@ -28,7 +28,18 @@ function renderCourses(filter) {
         const btn = document.createElement('button');
         btn.textContent = `${course.subject} ${course.number}`;
         btn.classList.add(course.completed ? 'completed' : 'incomplete');
+        
+         // Optionally add a checkmark icon or label
+    if (course.completed) {
+        btn.innerHTML += ' ✅'; // Or use '✔️' or a span with class
+        btn.setAttribute('aria-label', `${course.subject} ${course.number} completed`);
+    } else {
+        btn.setAttribute('aria-label', `${course.subject} ${course.number} incomplete`);
+    }
+
+
         container.appendChild(btn);
+
     });
 
      // Calculate and show total credits using reduce()
