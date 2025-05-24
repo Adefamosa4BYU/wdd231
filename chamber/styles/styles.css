@@ -232,8 +232,10 @@ footer div p {
   height: 24px;
 }
 
-section h1 {
+h1 {
   font-size: 2rem;
+  margin: 0;
+  padding: 1rem 1rem;
 }
 
 /* Responsive layout for larger screens */
@@ -320,7 +322,7 @@ section h1 {
         height: auto;
       }
 
-      section h1 {
+      h1 {
   font-size: 1.5rem;
 }
   }
