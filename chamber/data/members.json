@@ -1,0 +1,59 @@
+[
+  {
+    "name": "Lagos Chamber of Commerce and Industry",
+    "address": "Commerce House, 1 Idowu Taylor St, Victoria Island, Lagos",
+    "phone": "+234-700-CHAMBER",
+    "website": "https://www.lagoschamber.com",
+    "image": "lagos.png",
+    "membership": 1
+  },
+  {
+    "name": "Abuja Chamber of Commerce and Industry",
+    "address": "KM 8, Umaru Musa Yar'adua Way, Abuja",
+    "phone": "+234-803-123-4567",
+    "website": "https://www.accinigeria.com",
+    "image": "abuja.png",
+    "membership": 2
+  },
+  {
+    "name": "Kano Chamber of Commerce, Industry, Mines and Agriculture",
+    "address": "No. 1, Club Road, Kano",
+    "phone": "+234-805-678-9012",
+    "website": "https://kaccima.ng/",
+    "image": "kano.png",
+    "membership": 1
+  },
+  {
+    "name": "Port Harcourt Chamber of Commerce and Industry",
+    "address": "PH Chamber Complex, Oginigba Industrial Layout, Trans-Amadi, Port Harcourt",
+    "phone": "+234-809-876-5432",
+    "website": "https://phccima.ng/",
+    "image": "phcc.jpg",
+    "membership": 3
+  },
+  {
+    "name": "Kaduna Chamber of Commerce, Industry, Mines and Agriculture",
+    "address": "Trade Fair Complex, Kaduna",
+    "phone": "+234-807-234-5678",
+    "website": "https://web.facebook.com/kadccima/?_rdc=1&_rdr#",
+    "image": "kaduna.jpg",
+    "membership": 2
+  },
+  {
+    "name": "Osun Chamber of Commerce, Industry, Mines and Agriculture",
+    "address": "10 Adeleke Road, Osogbo, Osun State",
+    "phone": "+234-803-236-6589",
+    "website": "https://web.facebook.com/osunstatechamberofc/?_rdc=1&_rdr#",
+    "image": "osun.png",
+    "membership": 3
+  },
+  {
+    "name": "Enugu Chamber of Commerce, Industry, Mines and Agriculture",
+    "address": "Trade Fair Complex, Enugu",
+    "phone": "+234-812-345-6789",
+    "website": "https://www.enuguchamber.org",
+    "image": "enugu.png",
+    "membership": 2
+  }
+]
+

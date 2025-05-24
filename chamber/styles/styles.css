@@ -1,0 +1,444 @@
+:root {
+    --primary-color: #800000;    
+    --secondary-color: #585656;  
+    --accent-color: #ffffff;      
+    --background-color: #003366;  
+    --text-color: #000000;        
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #fff;
+    color: var(--background-color);
+  }
+  
+  header {
+    background-color: var(--background-color);;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0px 1rem; */
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 1rem;
+  }
+
+  .header-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  /* .header-sub-title {
+    display: flex;
+    flex-direction: column;
+  } */
+
+  .header-sub-title h2 {
+    font-size: clamp(1rem, 5vw, 1.8rem);
+    white-space: nowrap;         /* prevent wrap */
+    overflow: hidden;
+    text-overflow: ellipsis;     /* truncate if needed */
+    margin: 0;
+  }
+  
+  .header-sub-title p { 
+    margin: 0;
+  }
+
+  .profile-pic {
+    width: 60px;
+    /* height: 60px; */
+    /* border-radius: 50%; */
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: 0.3s;
+  }
+  
+
+  nav.nav-menu {
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+  }
+  
+  nav.nav-menu a {
+    padding: 0.8rem;
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+
+  .nav-menu .active {
+    color: orange;
+  }
+
+
+/* #members.grid-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+#members.list-view section {
+  display: block;
+  margin: 1rem 0;
+} */
+
+section {
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+/* img {
+  width: 100%;
+  height: auto;
+} */
+
+.grid-view img {
+  width: 150px;
+  height: auto;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:flex-start;
+  padding: 1rem;
+}
+
+footer div h3 {
+  font-size: 1.5rem;
+}
+
+footer div p {
+  font-size: 1.1rem;
+}
+
+.footer-1st p, h3 {
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.footer-3rd p, h3 {
+  padding-bottom: 5px;
+  margin: 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px; /* space between icons */
+  align-items: center;
+}
+
+.social-icons img {
+  width: 52px;   /* size of the icons */
+  height: 52px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1); /* slight zoom effect on hover */
+}
+
+
+
+/* .controls {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.controls button {
+  border: 2px solid steelblue;
+  background-color: transparent;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.controls button img {
+  width: 24px;
+  height: 24px;
+}
+
+.controls button.active {
+  background-color: #e0f0ff;
+}
+
+#members.grid-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+#members.grid-view section {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+#members.grid-view img {
+  width: 100px;
+  height: auto;
+  margin: 0.5rem 0;
+}
+
+#members.list-view {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#members.list-view section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  background-color: #f0fdfd;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+#members.list-view img {
+  display: none;
+}
+
+#members h3,
+#members p,
+#members a {
+  margin: 0;
+} */
+
+
+
+
+/* Default: Mobile First */
+#members.grid-view {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+#members.grid-view section {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+#members.grid-view img {
+  width: 100px;
+  height: auto;
+  margin: 0.5rem 0;
+}
+
+#members.list-view {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#members.list-view section {
+  display: flex;
+  flex-direction: column;
+  background-color: #f0fdfd;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+#members.list-view section > * {
+  margin: 0.25rem 0;
+}
+
+#members.list-view img {
+  display: none;
+}
+
+/* Control buttons */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.controls button {
+  border: 2px solid steelblue;
+  background-color: transparent;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.controls button img {
+  width: 24px;
+  height: 24px;
+}
+
+.controls button.active {
+  background-color: #e0f0ff;
+}
+
+/* Typography */
+#members h3,
+#members p,
+#members a {
+  margin: 0.3rem 0;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.controls button img {
+  width: 24px;
+  height: 24px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* or cover depending on your use case */
+}
+
+/* 🔁 Responsive layout for larger screens */
+@media (min-width: 640px) {
+  #members.grid-view {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  #members.list-view section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    text-align: left;
+  }
+
+  #members.list-view img {
+    display: none;
+  }
+
+  #members.list-view section > * {
+    margin: 0;
+  }
+
+  #members h3,
+  #members p,
+  #members a {
+    text-align: left;
+  }
+}
+
+
+
+
+/* Responsive */
+  @media (max-width: 768px) {
+    header {
+    display: block;
+    }
+
+    .header-title h1 {
+        font-size: 1.2rem;
+    }
+    .hamburger {
+      display: flex;
+    }
+  
+    nav.nav-menu {
+      flex-direction: column;
+      display: none;
+    }
+  
+    nav.nav-menu.active {
+      display: flex;
+    }
+  
+    .content-grid {
+      flex-direction: column;
+    }
+  
+    .header-container {
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    footer {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 15px;
+  }
+
+  .social-icons {
+    justify-content: center;
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .footer-1st, .footer-3rd {
+    width: 100%;
+  }
+
+      .grid-view img {
+        width: 75px;
+        height: auto;
+      }
+
+      
+  }
+  
+
+   @media (max-width: 480px) {
+    .header-title h1 {
+      font-size: 1rem;
+    }
+  
+    .profile-pic {
+      width: 32px;
+      height: 32px;
+    }
+
+    .hamburger {
+        display: flex;
+      }
+    
+      nav.nav-menu {
+        flex-direction: column;
+        display: none;
+      }
+    
+      nav.nav-menu.active {
+        display: flex;
+      }
+    
+      .content-grid {
+        flex-direction: column;
+      }
+  }

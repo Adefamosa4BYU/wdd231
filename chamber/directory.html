@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chamber of Commerce Directory for [Your City]">
+  <meta name="author" content="Adegbite Famosa">
+  <link rel="icon" href="images/favicon.ico">
+  <meta property="og:title" content="Chamber of Commerce - [Your City]">
+  <meta property="og:description" content="Explore member businesses in [Your City]">
+  <meta property="og:image" content="https://yourusername.github.io/wdd231/chamber/images/og-image.jpg">
+  <meta property="og:url" content="https://yourusername.github.io/wdd231/chamber/directory.html">
+  <title>Directory - [Your City] Chamber</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/directory.js" defer></script>
+  <script src="scripts/footer.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="header-title">
+        <img src="images/logo.png" alt="Profile Photo" class="profile-pic">
+        <div class="header-sub-title">
+            <h2>Osun</h2>
+            <p>Chamber of Commerce</p>
+
+        </div>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu" aria-expanded="false">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </div>
+    <nav class="nav-menu" id="navMenu">
+      <a href="#">Home</a>
+      <a href="#" class="active">Directory</a>
+      <a href="#">Join</a>
+      <a href="#">Discover</a>
+    </nav>
+  </header>
+
+<main>
+    <!-- <section class="controls">
+      <button id="grid">Grid View</button>
+      <button id="list">List View</button>
+    </section>
+    <section id="members" class="grid-view">
+      
+    </section> -->
+
+    <section class="controls">
+        <button id="grid" class="active" title="Grid View">
+            <img src="images/grid.svg" alt="Grid View">
+        </button>
+        <button id="list" title="List View">
+            <img src="images/list.svg" alt="List View">
+        </button>
+    </section>
+
+    <section id="members" class="grid-view">
+        <!-- Member cards will be injected here -->
+    </section>
+</main>
+
+  <footer>
+    <div class="footer-1st">
+        <h3>Osun Chamber of Commerce</h3>
+        <p>10 Adeleke Road</p>
+        <p>Osogbo, Osun 23423</p>
+        <p>info@osuncc.org</p>
+        <p>+2348032366589</p>
+    </div>
+
+    <div class="social-icons">
+        <img src="images/facebook-brands.svg" alt="Facebook">
+        <img src="images/youtube-brands.svg" alt="Youtube">
+        <img src="images/instagram-brands.svg" alt="Instagram">
+    </div>
+
+    <div class="footer-3rd">
+        <p>
+            WDD231 Class Project
+        </p>
+        <p>
+            Marie Martinez
+        </p>
+
+        <p>&copy; <span id="year"></span> Osun Chamber of Commerce </p>
+       <p> Last Modification <span id="lastModified"></span></p>
+    </div>
+
+  </footer>
+
+ </body>
+</html>
