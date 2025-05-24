@@ -45,3 +45,4 @@ const hamburger = document.getElementById('hamburger');
       const isOpen = navMenu.classList.toggle('active');
       hamburger.setAttribute('aria-expanded', isOpen);
     });
+    

@@ -96,33 +96,21 @@ body {
     color: orange;
   }
 
-
-/* #members.grid-view {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-}
-
-#members.list-view section {
-  display: block;
-  margin: 1rem 0;
-} */
-
 section {
   border: 1px solid #ccc;
   padding: 1rem;
 }
-
-/* img {
-  width: 100%;
-  height: auto;
-} */
 
 .grid-view img {
   width: 150px;
   height: auto;
 }
 
+img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
 footer {
   display: flex;
   flex-direction: row;
@@ -165,78 +153,6 @@ footer div p {
 .social-icons img:hover {
   transform: scale(1.1); /* slight zoom effect on hover */
 }
-
-
-
-/* .controls {
-  display: flex;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.controls button {
-  border: 2px solid steelblue;
-  background-color: transparent;
-  padding: 0.5rem;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.controls button img {
-  width: 24px;
-  height: 24px;
-}
-
-.controls button.active {
-  background-color: #e0f0ff;
-}
-
-#members.grid-view {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-}
-
-#members.grid-view section {
-  border: 1px solid #ccc;
-  padding: 1rem;
-  background-color: #f9f9f9;
-  text-align: center;
-}
-
-#members.grid-view img {
-  width: 100px;
-  height: auto;
-  margin: 0.5rem 0;
-}
-
-#members.list-view {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-#members.list-view section {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  align-items: center;
-  background-color: #f0fdfd;
-  padding: 1rem;
-  border-bottom: 1px solid #ccc;
-}
-
-#members.list-view img {
-  display: none;
-}
-
-#members h3,
-#members p,
-#members a {
-  margin: 0;
-} */
-
-
 
 
 /* Default: Mobile First */
@@ -298,11 +214,6 @@ footer div p {
   transition: background-color 0.3s;
 }
 
-.controls button img {
-  width: 24px;
-  height: 24px;
-}
-
 .controls button.active {
   background-color: #e0f0ff;
 }
@@ -321,13 +232,11 @@ footer div p {
   height: 24px;
 }
 
-img {
-  width: 100%;
-  height: auto;
-  object-fit: contain; /* or cover depending on your use case */
+section h1 {
+  font-size: 2rem;
 }
 
-/* 🔁 Responsive layout for larger screens */
+/* Responsive layout for larger screens */
 @media (min-width: 640px) {
   #members.grid-view {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -411,7 +320,9 @@ img {
         height: auto;
       }
 
-      
+      section h1 {
+  font-size: 1.5rem;
+}
   }
   
 
