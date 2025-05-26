@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Lagos Chamber of Commerce",
+     "tagline": "Innovating Your Future",
+    "logo": "images/lagos.png",
+    "phone": "+234-700-CHAMBER",
+    "address": "123 Gold St, Lagos",
+    "website": "https://www.lagoschamber.com",
+    "email": "info@lagoschamber.com",
+    "membership": "gold"
+},
+{
+    "name": "Abuja Chamber of Commerce",
+     "tagline": "Innovating Your Future",
+    "logo": "images/abuja.png",
+    "phone": "+234-803-123-4567",
+    "address": "456 Silver Rd, Abuja",
+    "website": "https://www.accinigeria.com",
+    "email": "info@accinigeria.com",
+    "membership": "silver"
+},
+  {
+    "name": "Port Harcourt Chamber of Commerce",
+     "tagline": "Innovating Your Future",
+    "logo": "images/phcc.jpg",
+    "phone": "+234-809-876-5432",
+    "address": "123 Gold St, PH",
+    "website": "https://phccima.ng/",
+    "email": "info@phccima.com",
+    "membership": "silver"
+},
+{
+    "name": "Kaduna Chamber of Commerce",
+     "tagline": "Innovating Your Future",
+    "logo": "images/kaduna.jpg",
+    "phone": "+234-807-234-5678",
+    "address": "456 Silver Rd, Kaduna",
+    "website": "https://kadunacc.com",
+    "email": "info@kadunacc.com",
+    "membership": "silver"
+},
+{
+    "name": "Kano Chamber of Commerce,",
+     "tagline": "Innovating Your Future",
+    "logo": "images/kano.jpg",
+    "phone": "+234-805-678-9012",
+    "address": "789 Basic Ave, Kano",
+    "website": "https://kaccima.ng/",
+    "email": "info@kaccima.com",
+    "membership": "basic"
+  }
+]

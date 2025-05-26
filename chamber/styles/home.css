@@ -1,0 +1,264 @@
+.hero {
+    position: relative;
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #ffd700;
+}
+
+section {
+    border: none !important;
+    margin: 1px 0 !important;
+    padding: 0 !important;
+
+}
+
+.main-grid {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: auto;
+    padding: 1rem;
+}
+
+.current-events {
+    flex: 4;
+}
+
+.current-weather {
+    flex: 3;
+}
+
+.weather-forecast {
+    flex: 3;
+}
+
+.card {
+    background: #eef;
+    /* padding: 1rem; */
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    /* height: 250px; */
+}
+
+.content-header {
+    background-color: var(--background-color);
+    ;
+    max-height: 55px;
+    border-radius: 8px 8px 0 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    padding: 0.1rem 0.1rem;
+}
+
+/* .section {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    } */
+
+.weather,
+.members {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.forecast-day {
+    margin-bottom: 10px;
+}
+
+.members-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.member {
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.gold {
+    border-left: 5px solid gold;
+}
+
+.silver {
+    border-left: 5px solid silver;
+}
+
+/* .weather-box, .forecast-box {
+  padding: 1rem;
+  margin-top: 1rem;
+  background: #f0f8ff;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+.weather-box img {
+  width: 80px;
+} */
+
+.weather-box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background: #eef;
+    padding: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.weather-box img {
+    width: 80px;
+    height: auto;
+    margin: 1rem;
+    background-color: rgba(0, 0, 0, 0.904);
+    padding: 0.2rem;
+    border-radius: 1px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.weather-details {
+    text-align: left;
+}
+
+.forecast-box {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+.spotlight {
+    padding: 1rem !important;
+}
+
+
+
+.spotlight-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.spotlight-card {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 1rem;
+  /* box-shadow: 0 2px 8px rgba(0,0,0,0.1); */
+  text-align: center;
+}
+
+.spotlight-card h3 {
+  margin: 0.25rem 0;
+  font-size: 1.2rem;
+}
+
+.spotlight-card .tagline {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #555;
+}
+
+.spotlight-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.spotlight-content img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 8px;
+  background-color: #ccc;
+  flex-shrink: 0;
+}
+
+.spotlight-info {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.spotlight-info a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.membership {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .main-grid {
+        flex-direction: column;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+
+    .weather-box {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 1.5rem;
+        text-align: left;
+    }
+
+    .weather-box img {
+        margin-bottom: 0;
+    }
+
+    .weather-details {
+        text-align: left;
+    }
+
+    .spotlight-content {
+        flex-direction: column;
+    }
+
+    .spotlight-content img {
+        margin: 0 auto;
+    }
+}
