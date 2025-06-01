@@ -1,0 +1,47 @@
+/* Page centering and layout */
+main {
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Headings */
+main h1 {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+main h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  color: #333;
+}
+
+/* Paragraph */
+main p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+/* Confirmation Details List */
+#user-info-list {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+#user-info-list li {
+  background: #f3f3f3;
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  border-left: 4px solid #003366;
+  border-radius: 5px;
+}

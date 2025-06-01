@@ -93,7 +93,8 @@ body {
   }
 
   .nav-menu .active {
-    color: orange;
+    color: #ffbe4d;
+    font-weight: 600;
   }
 
 section {
@@ -118,7 +119,7 @@ footer {
   justify-content: space-between;
   align-items:flex-start;
   padding: 1rem;
-  min-height: 200px;
+  /* min-height: 180px; */
 }
 
 footer div h3 {

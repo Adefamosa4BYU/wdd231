@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Osun Chamber of Commerce</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce Directory for Osun">
+    <meta name="author" content="Adegbite Famosa">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <meta property="og:title" content="Chamber of Commerce - Osun">
+    <meta property="og:description" content="Explore member businesses in Osun">
+    <meta property="og:image" content="https://adefamosa4byu.github.io/wdd231/chamber/images/preview.jpg">
+    <meta property="og:url" content="https://adefamosa4byu.github.io/wdd231/">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-title">
+                <img src="images/logo.png" alt="Profile Photo" class="profile-pic">
+                <div class="header-sub-title">
+                    <h2>Osun</h2>
+                    <p>Chamber of Commerce</p>
+                </div>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu" aria-expanded="false">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </div>
+        <nav class="nav-menu" id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" class="active">Join</a>
+            <a href="#">Discover</a>
+        </nav>
+    </header>
+
+     <main>
+        <h1>Chamber Membership Application</h1>
+
+<form class="membership-form" method="get" action="thankyou.html">
+    <div class="form-grid">
+        <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required autocomplete="given-name" />
+        </div>
+
+        <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required autocomplete="family-name" />
+        </div>
+
+        <div class="form-group">
+            <label for="orgTitle">Organizational Title:</label>
+            <input type="text" id="orgTitle" name="orgTitle" pattern="[A-Za-z\s\-]{7,}"
+                autocomplete="organization-title" />
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="example@email.com" autocomplete="email" />
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Mobile Phone:</label>
+            <input type="tel" id="phone" name="phone" required autocomplete="tel" />
+        </div>
+
+        <div class="form-group">
+            <label for="organization">Organization Name:</label>
+            <input type="text" id="organization" name="organization" required autocomplete="organization" />
+        </div>
+
+        <div class="form-group">
+            <label for="membership">Membership Level:</label>
+            <select id="membership" name="membership">
+                <option value="np">NP Membership (Free)</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="gold">Gold Membership</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="description">Business Description:</label>
+            <textarea id="description" name="description"></textarea>
+        </div>
+    </div>
+
+    <!-- Hidden timestamp field -->
+    <input type="hidden" id="timestamp" name="timestamp" />
+
+    <!-- Submit button -->
+    <div class="submit-container">
+        <input type="submit" value="Join Now" />
+    </div>
+</form>
+
+
+    <!-- Membership Cards Section -->
+    <section class="membership-cards">
+      <div class="card" id="np-card">
+        <h2>NP Membership</h2>
+        <a href="#" class="info-link" data-modal="np-modal">View Benefits</a>
+      </div>
+      <div class="card" id="bronze-card">
+        <h2>Bronze Membership</h2>
+        <a href="#" class="info-link" data-modal="bronze-modal">View Benefits</a>
+      </div>
+      <div class="card" id="silver-card">
+        <h2>Silver Membership</h2>
+        <a href="#" class="info-link" data-modal="silver-modal">View Benefits</a>
+      </div>
+      <div class="card" id="gold-card">
+        <h2>Gold Membership</h2>
+        <a href="#" class="info-link" data-modal="gold-modal">View Benefits</a>
+      </div>
+    </section>
+
+    <!-- Modal Containers -->
+    <div id="np-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>NP Membership Benefits</h3>
+        <ul>
+          <li>Free membership for nonprofits</li>
+          <li>Access to events</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="bronze-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Bronze Membership Benefits</h3>
+        <ul>
+          <li>Event participation</li>
+          <li>Newsletter mention</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="silver-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Silver Membership Benefits</h3>
+        <ul>
+          <li>Bronze benefits</li>
+          <li>Social media spotlight</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="gold-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Gold Membership Benefits</h3>
+        <ul>
+          <li>Silver benefits</li>
+          <li>Homepage spotlight</li>
+          <li>Priority event invites</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+    <footer>
+        <div class="footer-1st">
+            <h3>Osun Chamber of Commerce</h3>
+            <p>10 Adeleke Road</p>
+            <p>Osogbo, Osun 23423</p>
+            <p>info@osuncc.org</p>
+            <p>+2348032366589</p>
+        </div>
+
+        <div class="social-icons">
+            <img src="images/facebook-brands.svg" alt="Facebook" width="52" height="52">
+            <img src="images/youtube-brands.svg" alt="Youtube" width="52" height="52">
+            <img src="images/instagram-brands.svg" alt="Instagram" width="52" height="52">
+        </div>
+
+        <div class="footer-3rd">
+            <p>
+                WDD231 Class Project
+            </p>
+            <p>
+                Marie Martinez
+            </p>
+
+            <p>&copy; <span id="year"></span> Osun Chamber of Commerce </p>
+            <p> Last Modification <span id="lastModified"></span></p>
+        </div>
+
+    </footer>
+
+  </body>
+
+</html>
