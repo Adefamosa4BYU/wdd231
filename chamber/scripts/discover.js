@@ -21,3 +21,12 @@ fetch("data/discover.json")
       grid.appendChild(card);
     });
   });
+
+  const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('navMenu');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = navMenu.classList.toggle('active');
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+    
