@@ -1,0 +1,127 @@
+:root {
+    --primary-color: #800000;    
+    --secondary-color: #585656;  
+    --accent-color: #ffffff;      
+    --background-color: #003366;  
+    --text-color: #000000;        
+}
+
+
+.discover-grid {
+  display: grid;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+main h2 {
+  text-align: center;
+  /* font-size: 1.8rem;
+  margin-top: 1rem; */
+}
+
+.visitor-message {
+  text-align: center;
+  font-style: italic;
+  color: var(--primary-color);
+  margin: 0.5rem auto 1.5rem auto;
+  max-width: 600px;
+}
+
+.discover-card {
+  background-color: var(--accent-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.discover-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.discover-card figure {
+  margin: 0 auto;
+}
+
+.discover-card img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.discover-card address {
+  font-style: normal;
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.discover-card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.discover-card button {
+  background-color: var(--background-color);
+  color: var(--accent-color);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.discover-card button:hover {
+  background-color: var(--background-color);
+}
+
+section {
+    border: none !important;
+    padding: 3rem 1.5rem !important;
+}
+
+/* .discover-card img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+} */
+
+@media (min-width: 641px) {
+.discover-grid {
+  grid-template-areas:
+    "card1 card2"
+    "card3 card4"
+    "card5 card6"
+    "card7 card8";
+}
+}
+
+@media (min-width: 1025px) {
+  .discover-grid {
+    grid-template-areas:
+      "card1 card2 card3 card4"
+      "card5 card6 card7 card8";
+  }
+}
+
+@media (min-width: 641px) {
+  .discover-card img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+}
