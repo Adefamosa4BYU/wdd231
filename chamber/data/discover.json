@@ -3,48 +3,48 @@
     "name": "Freedom Park",
     "address": "Broad Street, Lagos Island, Nigeria",
     "description": "A memorial and leisure park in the heart of Lagos, built from the remains of a colonial prison and now a venue for cultural events.",
-    "image": "images/freedompack.jpg"
+    "image": "images/freedompack.webp"
   },
   {
     "name": "Nike Art Gallery",
     "address": "Lekki Peninsula, Lagos, Nigeria",
     "description": "One of the largest art galleries in West Africa, showcasing traditional and contemporary Nigerian art and textiles.",
-    "image": "images/nike.jpg"
+    "image": "images/nike.webp"
   },
   {
     "name": "Lekki Conservation Centre",
     "address": "Lekki-Epe Expressway, Lagos, Nigeria",
     "description": "A nature reserve with a canopy walkway, wildlife, and serene walking trails, ideal for eco-tourism and photography.",
-    "image": "images/lekkicenter.jpg"
+    "image": "images/lekkicenter.webp"
   },
   {
     "name": "National Theatre",
     "address": "Iganmu, Lagos Mainland, Nigeria",
     "description": "A cultural landmark and performance center dedicated to the promotion of Nigerian arts and theatre.",
-    "image": "images/national-theatre.jpg"
+    "image": "images/national-theatre.webp"
   },
   {
     "name": "Tarkwa Bay Beach",
     "address": "Tarkwa Bay, Lagos, Nigeria",
     "description": "A peaceful, sheltered beach accessible by boat, popular for swimming, surfing, and beachside relaxation.",
-    "image": "images/takwaybay.jpg"
+    "image": "images/takwaybay.webp"
   },
   {
     "name": "Elegushi Beach",
     "address": "Lekki Phase 1, Lagos, Nigeria",
     "description": "A vibrant private beach with music, nightlife, and a lively atmosphere, offering various water activities.",
-    "image": "images/elegushibeach.jpg"
+    "image": "images/elegushibeach.webp"
   },
   {
     "name": "National Museum Lagos",
     "address": "Awolowo Road, Onikan, Lagos, Nigeria",
     "description": "Houses a rich collection of Nigerian historical artifacts, traditional arts, and archaeological findings.",
-    "image": "images/museum-entrance.jpg"
+    "image": "images/museum-entrance.webp"
   },
   {
     "name": "Terra Kulture",
     "address": "Tiamiyu Savage Street, Victoria Island, Lagos, Nigeria",
     "description": "A cultural center featuring a theater, art gallery, bookstore, and Nigerian cuisine, promoting local creative arts.",
-    "image": "images/terra-kulture-nigeria.jpg"
+    "image": "images/terra-kulture-nigeria.webp"
   }
 ]
