@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Intro to Digital Literacy",
+    "description": "Learn essential computer skills, email use, and internet safety.",
+    "date": "2025-06-20",
+    "level": "Beginner",
+    "location": "ACI Hub, Lagos"
+  },
+  {
+    "title": "HTML & CSS Bootcamp",
+    "description": "Build your first website from scratch using HTML and CSS.",
+    "date": "2025-06-25",
+    "level": "Beginner",
+    "location": "ACI Hub, Abuja"
+  },
+  {
+    "title": "Business Tech Support 101",
+    "description": "Digitize your small business with free tools and basic training.",
+    "date": "2025-07-01",
+    "level": "For Entrepreneurs",
+    "location": "ACI Hub, Ibadan"
+  }
+
+]
